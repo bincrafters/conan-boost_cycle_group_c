@@ -4,7 +4,7 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.68.0@bincrafters/testing")
+base = python_requires("boost_base/1.69.0@bincrafters/testing")
 
 class BoostCycleGroupCConan(base.BoostBaseConan):
     name = "boost_cycle_group_c" # Level 14
@@ -14,7 +14,6 @@ class BoostCycleGroupCConan(base.BoostBaseConan):
         "dynamic_bitset",
         "iostreams",
         "multiprecision",
-        "pool",
         "random",
         "serialization",
         "spirit",
@@ -23,7 +22,6 @@ class BoostCycleGroupCConan(base.BoostBaseConan):
     header_only_libs = [
         "dynamic_bitset",
         "multiprecision",
-        "pool",
         "spirit"
     ]
     options = {"shared": [True, False]}
@@ -60,6 +58,7 @@ class BoostCycleGroupCConan(base.BoostBaseConan):
         "boost_numeric_conversion",
         "boost_optional",
         "boost_phoenix",
+        "boost_pool",
         "boost_predef",
         "boost_preprocessor",
         "boost_proto",

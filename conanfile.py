@@ -29,9 +29,10 @@ class BoostCycleGroupCConan(base.BoostBaseConan):
         "use_bzip2": [True, False],
         "use_lzma": [True, False],
         "use_zlib": [True, False],
-        "use_zstd": [True, False]
+        "use_zstd": [True, False],
+        "threadapi": ['default', 'win32', 'pthread']
     }
-    default_options = "shared=False", "use_bzip2=True", "use_lzma=True", "use_zlib=True", "use_zstd=True"
+    default_options = "shared=False", "use_bzip2=True", "use_lzma=True", "use_zlib=True", "use_zstd=True", "threadapi=default"
     b2_defines = ["LZMA_API_STATIC"]
     b2_requires = [
         "boost_algorithm",

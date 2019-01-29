@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.69.0@bincrafters/testing")
 
 class BoostCycleGroupCConan(base.BoostBaseConan):
     name = "boost_cycle_group_c" # Level 14
+    version = "1.69.0"
     url = "https://github.com/bincrafters/conan-boost_cycle_group_c"
     lib_short_names = [
         "date_time",
